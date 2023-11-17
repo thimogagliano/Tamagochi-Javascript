@@ -1,0 +1,153 @@
+/* css rest */
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling van index.html */
+
+body {
+    background-image: url('../images/Achtergrond.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+section.bar1,
+.bar2 {
+    margin: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+button.start {
+    font-size: 24px;
+    margin-left: 0.60em;
+    background-color: darkgreen;
+    border: solid 2px black;
+    border-radius: 4px;
+    padding: 0.1em;
+}
+
+button.stop {
+    font-size: 24px;
+    margin-left: 0.60em;
+    background-color: orangered;
+    border: solid 2px black;
+    border-radius: 4px;
+    padding: 0.1em;
+}
+
+section.score {
+    font-size: 12px;
+    left: 1062px;
+    top: 15px;
+    border: solid 2px orange;
+    border-radius: 4px;
+    padding: 0.5em;
+    color: orange;
+    background-color: white;
+}
+
+p.scoretekst {
+    font-size: 16px;
+}
+
+.spatel,
+.viltje,
+.glasleeg,
+.biertap,
+.viltjebar,
+.glastap,
+.getaptglas,
+.meldingtekst,
+.bieropbar,
+.klantbar,
+section.score {
+    position: absolute;
+}
+
+.meldingtekst {
+    color: orangered;
+    border: solid 2px orangered;
+    background-color: white;
+    padding: 0.25em;
+    border-radius: 4px;
+    font-size: 24px;
+    left: 350px;
+    top: 50px;
+}
+
+.klantbar {
+    height: 220px;
+    left: 60px;
+    top: 133px;
+}
+
+.bieropbar {
+    height: 80px;
+    left: 255px;
+    top: 245px;
+}
+
+.spatel {
+    left: 180px;
+    top: 350px;
+}
+
+.viltje {
+    left: 50px;
+    top: 460px;
+}
+
+.biertap {
+    left: 420px;
+    top: 160px;
+}
+
+.glasleeg {
+    left: 1000px;
+    top: 370px;
+}
+
+.viltjebar {
+    left: 240px;
+    top: 290px;
+}
+
+.glastap {
+    left: 495px;
+    top: 370px;
+}
+
+.getaptglas {
+    left: 320px;
+    top: 355px;
+}
+
+/* styling van progress bar. website voor gebruikt: https://css-tricks.com/html5-progress-element/ 
+Vooral voor de webkits en pseudoclasses*/
+
+progress {
+    -webkit-appearance: none;
+    background-color: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 4px;
+    background-color: white;
+}
+
+progress::-webkit-progress-value {
+    background-color: skyblue;
+    border-radius: 4px;
+
+}

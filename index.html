@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- koppelen van de stylesheet aan de html -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Bier</title>
+</head>
+
+<body>
+    <!-- p element om met java een melding in te plaatsen -->
+    <p class="melding"></p>
+
+    <!-- gebruik van het progress element opgezocht op deze site: https://stackoverflow.com/questions/20277052/how-to-make-a-health-bar-->
+    <!-- section om de dorst te laten zien -->
+    <section class="bar1">
+        <p>Dorst</p>
+        <progress id="dorst" value="100" max="100"></progress>
+    </section>
+
+    <!-- section om de blijheid te laten zien -->
+    <section class="bar2">
+        <p>Blijheid</p>
+        <progress id="blijheid" value="100" max="100"></progress>
+    </section>
+
+    <!-- start/stop knoppen voor de timers-->
+    <button class="start">Start spel</button>
+    <button class="stop"></button>
+
+    <!-- section voor het scorebord -->
+    <section class="score">
+        <h1>Score getapte biertjes</h1>
+        <p class="scoretekst"></p>
+    </section>
+
+    <!-- Alle benodigde afbeelding/plaatjes voor het programma (zelfgemaakt)-->
+    <img src="./images/klant.png" class="klantbar" alt="plaatje van iemand aan de bar" />
+
+    <img src="./images/dummy.png" class="viltjebar" alt="dummy afbeelding"/>
+
+    <img src="./images/dummy.png" class="getaptglas" alt="dummy afbeelding"/>
+
+    <img src="./images/Biertap.png" class="biertap" alt="plaatje van een biertap"/>
+
+    <img src="./images/glasleeg.png" class="glasleeg" alt="plaatje van een leeg glas"/>
+
+    <img src="./images/Spatel.png" class="spatel" alt="plaatje van een spatel"/>
+
+    <img src="./images/Viltje.png" class="viltje" alt="plaatje van een viltje"/>
+
+    <img src="./images/dummy.png" class="bieropbar" alt="dummy afbeelding"/>
+
+    <img src="./images/dummy.png" class="glastap" alt="dummy afbeelding"/>
+
+    <!-- koppelen van het javascript aan de html -->
+    <script src="./java/script.js"></script>
+</body>
+
+</html>
